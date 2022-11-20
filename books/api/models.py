@@ -63,3 +63,6 @@ class Book(models.Model):
         unique_together = ('title', 'author', 'yearOfRel', 'publisher')
         verbose_name = 'Книга'
         verbose_name_plural = 'Книги'
+
+    def __str__(self):
+        return self.title
